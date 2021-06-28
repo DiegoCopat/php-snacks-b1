@@ -26,14 +26,14 @@
     <h1> 
 
         <?php 
-            $Numeri = [];
+            $NumeriCasuali = numeri();
             for (count($Numeri) = 0; count($Numeri) < 15; $i++) {
                 
                 $NumCasuale = rand(1, 100);
-                $Numeri.push("$NumCasuale");
+                numeri_push($NumeriCasuali, '$NumCasuale');
                 
             }
-            var_dump($Numeri);
+            // var_dump($Numeri);
         ?>
 
     </h1>
