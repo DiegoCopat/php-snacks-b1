@@ -31,9 +31,9 @@
                 
                 $numCasuale = rand(1, 100);
 
-                if (!in_array($numeriCasuali, $numCasuale)) {
+                if (!in_array($numCasuale, $numeriCasuali)) {
                     array_push($numeriCasuali, $numCasuale);
-                    echo $numCasuale;
+                    echo $numCasuale . "<br>";
                 }
                 
             }
