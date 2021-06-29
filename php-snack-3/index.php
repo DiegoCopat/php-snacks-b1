@@ -26,11 +26,15 @@
     <h1> 
 
         <?php 
-            $NumeriCasuali = [];
-            for ($i = 0; $i < 15; $i++) {
+            $numeriCasuali = [];
+            while (count($numeriCasuali) < 15) {
                 
-                $NumCasuale = rand(1, 100);
-                echo($NumCasuale . "<br>");
+                $numCasuale = rand(1, 100);
+
+                if (!in_array($numeriCasuali, $numCasuale)) {
+                    array_push($numeriCasuali, $numCasuale);
+                    echo $numCasuale;
+                }
                 
             }
         ?>
